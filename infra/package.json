@@ -1,0 +1,27 @@
+{
+  "name": "@myeczema/infra",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "myeczema-infra": "bin/myeczema-infra.ts"
+  },
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "synth": "cdk synth"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "latest",
+    "constructs": "latest",
+    "source-map-support": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "aws-cdk": "latest",
+    "tsx": "latest",
+    "typescript": "~6.0.3",
+    "vitest": "latest"
+  }
+}

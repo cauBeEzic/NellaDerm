@@ -1,0 +1,24 @@
+{
+  "name": "myeczema",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.22.0",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @myeczema/mobile start",
+    "mobile:ios": "pnpm --filter @myeczema/mobile ios",
+    "mobile:android": "pnpm --filter @myeczema/mobile android",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm --filter @myeczema/mobile check:native-config",
+    "cdk:synth": "pnpm --filter @myeczema/infra synth"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "~6.0.3",
+    "vitest": "latest"
+  }
+}

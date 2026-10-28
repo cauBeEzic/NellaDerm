@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "MyEczema",
+    "slug": "myeczema",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/brand/nella-logo.png",
+    "scheme": "myeczema",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "icon": "./assets/brand/nella-logo.png",
+      "bundleIdentifier": "com.nelladerm.myeczema",
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F7F9FE",
+        "foregroundImage": "./assets/brand/nella-logo.png"
+      },
+      "package": "com.nelladerm.myeczema",
+      "predictiveBackGestureEnabled": true
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/brand/nella-logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "enableSceneSupport": true
+          }
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F7F9FE",
+          "image": "./assets/brand/nella-logo.png",
+          "imageWidth": 142
+        }
+      ],
+      "expo-secure-store",
+      "expo-notifications",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "MyEczema uses photos you choose for the active profile’s private skin records or product-packaging attachments.",
+          "cameraPermission": "MyEczema uses the camera only when you choose to scan or photograph product packaging, or add a private skin-record photo for the active profile.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "MyEczema uses the camera only when you choose to scan or photograph product packaging, or add a private skin-record photo for the active profile.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

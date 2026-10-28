@@ -1,0 +1,25 @@
+packages:
+  - apps/*
+  - packages/*
+  - services/*
+  - infra
+
+# Windows native builds can use a drive-root store without changing dependency pins.
+virtualStoreDir: ${MYECZEMA_VIRTUAL_STORE_DIR:-node_modules/.pnpm}
+virtualStoreDirMaxLength: 32
+
+allowBuilds:
+  esbuild: true
+  unrs-resolver: true
+
+minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
+minimumReleaseAgeExclude:
+  - "@expo/*"
+  - "expo"
+  - "expo-*"
+  - "babel-preset-expo"
+  - "react"
+  - "react-dom"
+  - "react-native"
+  - "react-native-*"

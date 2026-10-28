@@ -1,0 +1,29 @@
+# Dependencies and build output
+node_modules/
+.pnpm-store/
+.expo/
+dist/
+build/
+coverage/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# AWS CDK output
+cdk.out/
+
+# Native generated output
+ios/
+android/
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Temporary Figma review exports
+.figma-review-cache/

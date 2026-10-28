@@ -1,0 +1,23 @@
+{
+  "name": "@myeczema/domain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/profile.ts",
+  "types": "src/profile.ts",
+  "exports": {
+    ".": "./src/profile.ts"
+  },
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3",
+    "vitest": "latest"
+  }
+}
